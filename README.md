@@ -47,7 +47,7 @@ Personal Task Tracker is a modern, feature-rich web application designed to help
 
 ## Live Demo
 
-[Link to deployed application]
+personal-task-tracker-9osr9wabv.vercel.app
 
 ## Screenshots
 
