@@ -1,10 +1,10 @@
 import React from 'react';
 
-const TaskItem = ({ task, onToggle, onEdit, onDelete }) => {
+const TaskItem = React.forwardRef(({ task, onToggle, onEdit, onDelete }, ref) => {
   // Priority color class
   const priorityClass = `priority-label ${task.priority?.toLowerCase() || 'medium'}`;
   return (
-    <div className={`task-item${task.completed ? ' completed' : ''}`}> 
+    <div ref={ref} className={`task-item${task.completed ? ' completed' : ''}`}> 
       <div className="task-main">
         <input
           type="checkbox"
@@ -28,6 +28,6 @@ const TaskItem = ({ task, onToggle, onEdit, onDelete }) => {
       </div>
     </div>
   );
-};
+});
 
 export default TaskItem; 
